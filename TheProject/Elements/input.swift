@@ -15,14 +15,17 @@ struct input: View {
             VStack{
                 if isSecure
                 {
-                    SecureField(placeHolder, text: value)
+                    SecureField(placeHolder, text: value!)
                         .padding()
                         .frame(width: 300, height: 40)
                         .background(Color.green.opacity(0.3))
                         .background()
                         .cornerRadius(5)
+
+
+                        
                 }else{
-                    TextField(placeHolder, text: value)
+                    TextField(placeHolder, text: value!)
                         .padding()
                         .frame(width: 300, height: 40)
                         .background(Color.green.opacity(0.3))
